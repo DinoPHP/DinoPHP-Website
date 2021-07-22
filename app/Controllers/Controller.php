@@ -7,6 +7,6 @@ class Controller {
 		return view('files.index');
 	}
 	public function docs() {
-		return 'test';
+		return view('files.docs');
 	}
 }
