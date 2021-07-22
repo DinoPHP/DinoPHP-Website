@@ -4,9 +4,9 @@ namespace App\Controllers;
 
 class Controller {
 	public function index() {
-		return view('files.index');
+		return view('index');
 	}
 	public function docs() {
-		return view('files.docs');
+		return view('docs');
 	}
 }

@@ -2,7 +2,7 @@
 
 <head>
 	<title>DinoPHP - The PHP Framework</title>
-	<?php @include('files.links') ?>
+	<?php @include('links') ?>
 	<style>
 
 	</style>
@@ -91,4 +91,4 @@
 </body>
 <?php @include('files.scripts') ?>
 
-</html>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/files/index.blade.php ENDPATH**/ ?>
