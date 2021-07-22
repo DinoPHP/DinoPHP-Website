@@ -17,7 +17,7 @@
 				<div class="col-lg" style="text-align: center;">
 					<h3 style="text-transform: capitalize;font-weight: 800;font-size: 40px;line-height: 45px;margin-bottom: 2%;">The PHP Framework for <br>Developers</h3>
 					<p style="font-weight: 400;font-size: 16px;color: #757575;margin-bottom: 2%;">DinoPHP is a web application framework with expressive, elegant syntax.<br>freeing you to create without sweating the small things.</p>
-					<a href="docs.php"><button class="doc-btn"><i class="far fa-folders"></i> Documentation</button></a>
+					<a href="{{('docs.php')}}"><button class="doc-btn"><i class="far fa-folders"></i> Documentation</button></a>
 					<a href="partners.php"><button class="partner-btn">Become a Partner</button></a>
 				</div>
 			</div>
