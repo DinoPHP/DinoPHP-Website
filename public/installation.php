@@ -37,7 +37,7 @@
                         You are ready to create your first Dinophp project. Launch Windows Terminal ( Git ) and begin a new terminal session. Next, you can use a simple terminal command to create a new Dinophp project. For example, to create a new Dinophp application in a directory named "DinoPHP", you may run the following command in your terminal
                     </p>
                     <div class="code">
-                        composer create-project --prefer-dist ahmed-ibrahim/DinoPHP DinoPHP
+                        composer create-project --prefer-dist ahmedibrahim/DinoPHP DinoPHP
                     </div>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                         Of course, you can change "DinoPHP" in this URL to anything you like. The Dinophp application's directory will be created within the directory you execute the command from.
