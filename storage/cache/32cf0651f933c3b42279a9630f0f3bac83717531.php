@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<?php @include('navbar') ?>
+	<?php @include('files.navbar') ?>
 
 	<div class="main-home">
 		<div class="container">
@@ -87,8 +87,8 @@
 			</div>
 		</div>
 	</div>
-<?php @include('footer') ?>
+<?php @include('files.footer') ?>
 </body>
-<?php @include('scripts') ?>
+<?php @include('files.scripts') ?>
 
-</html>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/index.blade.php ENDPATH**/ ?>
