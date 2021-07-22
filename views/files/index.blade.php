@@ -2,14 +2,14 @@
 
 <head>
 	<title>DinoPHP - The PHP Framework</title>
-	<?php include 'links.php' ?>
+	<?php @include('files.links') ?>
 	<style>
 
 	</style>
 </head>
 
 <body>
-	<?php include('navbar.php') ?>
+	<?php @include('files.navbar') ?>
 
 	<div class="main-home">
 		<div class="container">
@@ -17,7 +17,7 @@
 				<div class="col-lg" style="text-align: center;">
 					<h3 style="text-transform: capitalize;font-weight: 800;font-size: 40px;line-height: 45px;margin-bottom: 2%;">The PHP Framework for <br>Developers</h3>
 					<p style="font-weight: 400;font-size: 16px;color: #757575;margin-bottom: 2%;">DinoPHP is a web application framework with expressive, elegant syntax.<br>freeing you to create without sweating the small things.</p>
-					<a href="{{('docs.php')}}"><button class="doc-btn"><i class="far fa-folders"></i> Documentation</button></a>
+					<a href="docs.blade.php"><button class="doc-btn"><i class="far fa-folders"></i> Documentation</button></a>
 					<a href="partners.php"><button class="partner-btn">Become a Partner</button></a>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 							<i class="fas fa-rocket-launch" style="color: #e92644;font-size:55px"></i>
 							<div>
 								<span style="font-weight: bold;text-transform: capitalize;font-size: 18px;">Exceptional performance</span>
-								<p style="font-weight: 400;">CodeIgniter consistently outperforms most of its competitors.</p>
+								<p style="font-weight: 400;">DinoPHP consistently outperforms most of its competitors.</p>
 							</div>
 						</div>
 						<div style="display:flex;gap:10px;margin-bottom:10%">
@@ -87,8 +87,8 @@
 			</div>
 		</div>
 	</div>
-<?php include('footer.php') ?>
+<?php @include('files.footer') ?>
 </body>
-<?php include('scripts.php') ?>
+<?php @include('files.scripts') ?>
 
 </html>

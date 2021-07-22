@@ -2,6 +2,5 @@
 
 use DinoPHP\Router\Route;
 
-Route::get('/', function () {
-	return view('index');
-});
+Route::get('/home', 'Controller@index');
+Route::get('/docs', 'Controller@docs');

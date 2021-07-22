@@ -62,8 +62,8 @@
     <h1>404</h1>
     <p>not found</p>
     <div class="buttons">
-        <a href="https://dinophp/docs"><button class="docs">Documentation</button></a>
+        <a href="https://DinoPHP/docs"><button class="docs">Documentation</button></a>
     </div>
 </div>
 </body>
-</html><?php /**PATH C:\xampp\htdocs\DinoPHP\views/errors/404.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/errors/404.blade.php ENDPATH**/ ?>
