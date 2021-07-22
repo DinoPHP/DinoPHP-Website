@@ -214,6 +214,16 @@ a {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+span[style="color: #0000BB"] {
+    color: #82b1ff !important;
+}
+span[style="color: #007700"] {
+    color: #c792ea !important;
+}
+span[style="color: #DD0000"] {
+    color: #c3e88d !important;
+}
+
 /* Media Query */
 @media only screen and (max-width: 768px) {
     nav {

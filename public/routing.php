@@ -28,14 +28,28 @@
 			<?php include ('docs-menu.php')?>
 		</div>
 		<div class="col-lg">
-			<a href="#directory-structure"><h3 style="font-weight: bold"><span class="hashtag">#</span> Routing</h3></a>
-			<div id="directory-structure" style="margin-top: 5%;">
+			<a href="#routing"><h3 style="font-weight: bold"><span class="hashtag">#</span> Routing</h3></a>
+			<div id="routing" style="margin-top: 5%;">
 
-				<div id="introduction">
-					<a href="#introduction"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
+				<div id="basics">
+					<a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> Basics</h4></a>
 					<p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-						The default Dinophp application structure is intended to provide a great starting point for both large and small applications. But you are free to organize your application however you like. DinoPHP imposes almost no restrictions on where any given class is located - as long as Composer can autoload the class.
-					</p>
+                        The most basic Dinophp routes accept a URI and a closure, providing a very simple and expressive method of defining routes and behavior without complicated routing configuration files:
+                    </p>
+                    <div class="code">
+                        <?php
+                        highlight_string("
+<?php
+use DinoPHP\Router\Route;
+
+Route::get('/congrats', function () {
+return 'First application';
+});
+?>
+                        ");
+                        ?>
+
+                    </div>
 				</div>
 
 				<div id="root-directory">
