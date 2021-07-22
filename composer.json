@@ -1,0 +1,31 @@
+{
+    "name": "ahmedibrahim/dinophp",
+    "description": "DinoPHP is a web application framework with expressive. We believe development must be an enjoyable and creative experience. DinoPHP takes the pain out of development by easing common tasks used in many web projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Mohamed Ibrahim",
+            "email": "eng.ahmedmohamed.2002@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3|^8.0",
+        "filp/whoops": "^2.14",
+        "jenssegers/blade": "^1.4",
+        "rakit/validation": "^1.4"
+    },
+    "autoload" : {
+        "psr-4": {
+            "DinoPHP\\" : "src/",
+            "App\\" : "app/"
+        },
+        "files": [
+            "src/Helpers/helper.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
