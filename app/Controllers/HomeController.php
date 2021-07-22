@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-class HomeController {
-	public function index() {
+	Route::get('/', function () {
 		return view('home');
-	}
-}
+	});
