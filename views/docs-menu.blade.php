@@ -1,12 +1,12 @@
 <div class="menu-docs">
 	<span style="font-weight: 500;text-transform: uppercase;">Getting Started</span>
 	<ul>
-		<li><a href="installation.blade.php" class="menu-link">Installation</a></li>
-		<li><a href="directories.blade.php" class="menu-link">Directory Structure</a></li>
+		<li><a href="installation" class="menu-link">Installation</a></li>
+		<li><a href="directories" class="menu-link">Directory Structure</a></li>
 	</ul>
 	<span style="font-weight: 500;text-transform: uppercase;">Basics</span>
 	<ul>
-		<li><a href="routing.blade.php" class="menu-link">Routing</a></li>
+		<li><a href="routing" class="menu-link">Routing</a></li>
 		<li><a href="middleware.php" class="menu-link">Middleware</a></li>
 		<li><a href="controllers.php" class="menu-link">Controllers</a></li>
 		<li><a href="requests.php" class="menu-link">Requests</a></li>

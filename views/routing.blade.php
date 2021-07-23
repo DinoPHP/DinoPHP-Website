@@ -16,16 +16,16 @@
         }
 
 	</style>
-	<?php include('links.blade.php') ?>
+	@include('links')
 </head>
 
 <body>
-<?php include('navbar.blade.php') ?>
+@include('navbar')
 
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<?php include('docs-menu.blade.php') ?>
+			@include('docs-menu')
 		</div>
 		<div class="col-lg">
 			<a href="#routing"><h3 style="font-weight: bold"><span class="hashtag">#</span> Routing</h3></a>
@@ -110,8 +110,8 @@ return 'First application';
 	</div>
 </div>
 
-<?php include('footer.blade.php') ?>
+@include('footer')
 </body>
-<?php include('scripts.blade.php') ?>
+@include('scripts')
 
 </html>

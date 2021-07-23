@@ -31,4 +31,4 @@
             </div>
         </div>
     </div>
-</footer><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/footer.blade.php ENDPATH**/ ?>
+</footer><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/footer ENDPATH**/ ?>

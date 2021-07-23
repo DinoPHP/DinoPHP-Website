@@ -2,4 +2,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="js/1351.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-<?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/scripts.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/scripts ENDPATH**/ ?>

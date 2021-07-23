@@ -16,16 +16,16 @@
         }
 
 	</style>
-	<?php include('links.blade.php') ?>
+	@include('links')
 </head>
 
 <body>
-<?php include('navbar.blade.php') ?>
+@include('navbar')
 
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<?php include('docs-menu.blade.php') ?>
+			@include('docs-menu')
 		</div>
 		<div class="col-lg">
 			<a href="#directory-structure"><h3 style="font-weight: bold"><span class="hashtag">#</span> Directory Structure</h3></a>
@@ -96,8 +96,8 @@
 	</div>
 </div>
 
-<?php include('footer.blade.php') ?>
+@include('footer')
 </body>
-<?php include('scripts.blade.php') ?>
+@include('scripts')
 
 </html>

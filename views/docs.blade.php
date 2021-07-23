@@ -16,16 +16,16 @@
     }
     
     </style>
-    <?php include('links.blade.php') ?>
+    @include('links')
 </head>
 
 <body>
-    <?php include('navbar.blade.php') ?>
+    @include('navbar')
 
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <?php include('docs-menu.blade.php')?>
+                @include('docs-menu')?>
             </div>
             <div class="col-lg">
                 <h2 style="font-weight: 300;">Getting Started !</h2>
@@ -48,8 +48,8 @@
         </div>
     </div>
 
-    <?php include('footer.blade.php') ?>
+    @include('footer')
 </body>
-<?php include('scripts.blade.php') ?>
+@include('scripts')
 
 </html>
