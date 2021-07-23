@@ -16,16 +16,16 @@
         }
 
     </style>
-    @include('links')
+    <?php echo $__env->make('links', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
 
 <body>
-@include('navbar')
+<?php echo $__env->make('navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-3">
-            @include('docs-menu')
+            <?php echo $__env->make('docs-menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         </div>
         <div class="col-lg">
             <a href="#middleware"><h3 style="font-weight: bold"><span class="hashtag">#</span> Middleware</h3></a>
@@ -146,8 +146,8 @@ Route::any('/', function () {
     </div>
 </div>
 
-@include('footer')
+<?php echo $__env->make('footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
-@include('scripts')
+<?php echo $__env->make('scripts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-</html>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/middleware.blade.php ENDPATH**/ ?>

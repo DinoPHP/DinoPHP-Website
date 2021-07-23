@@ -21,4 +21,13 @@ class Controller {
 	public function middleware() {
 		return view('middleware');
 	}
+	public function controllers() {
+		return view('controllers');
+	}
+	public function requests() {
+		return view('requests');
+	}
+	public function response() {
+		return view('response');
+	}
 }
