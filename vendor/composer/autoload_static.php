@@ -4,13 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f
+class ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ef65a1626449d89d0811cf9befce46f0' => __DIR__ . '/..' . '/illuminate/events/functions.php',
@@ -129,8 +129,8 @@ class ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f
         ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/collections',
-            1 => __DIR__ . '/..' . '/illuminate/macroable',
+            0 => __DIR__ . '/..' . '/illuminate/macroable',
+            1 => __DIR__ . '/..' . '/illuminate/collections',
             2 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Pipeline\\' => 
@@ -186,9 +186,9 @@ class ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit80027deb153fff92c8e2bad1fc813f6f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2::$classMap;
 
         }, null, ClassLoader::class);
     }

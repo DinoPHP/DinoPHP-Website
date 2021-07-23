@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '4806b07dc61888aabfee8ea2f0c36aa83d32ea50',
+        'reference' => 'be5f6cb2122611c1d9e81931b829889567d87bfd',
         'name' => 'ahmedibrahim/dinophp',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '4806b07dc61888aabfee8ea2f0c36aa83d32ea50',
+            'reference' => 'be5f6cb2122611c1d9e81931b829889567d87bfd',
             'dev_requirement' => false,
         ),
         'doctrine/inflector' => array(
