@@ -26,7 +26,7 @@
         </li>
       </ul>
       <select onchange="location=this.value;" style="padding: 6px;border: 1px solid #CCC;border-radius: 5px;width: 200px;margin-left: auto;outline:none">
-        <option value="index.php">DinoPHP v1.0 (current)</option>
+        <option value="/">DinoPHP v1.0 (current)</option>
       </select>
     </div>
   </div>
