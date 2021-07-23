@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                @include('docs-menu')?>
+                @include('docs-menu')
             </div>
             <div class="col-lg">
                 <h2 style="font-weight: 300;">Getting Started !</h2>
