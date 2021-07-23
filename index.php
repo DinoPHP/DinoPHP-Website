@@ -15,7 +15,7 @@ use DinoPHP\Http\Request;
 |
 | Load the autoloader that will generated class that will be used
 */
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/local/vendor/autoload.php';
 /*
 |-------------------------------------------------------------------
 | Bootstrap
@@ -23,7 +23,7 @@ require __DIR__.'/vendor/autoload.php';
 |
 | Bootstrap the app and do action from framework
 */
-require __DIR__.'/bootstrap/app.php';
+require __DIR__.'/local/bootstrap/app.php';
 /*
 |-------------------------------------------------------------------
 | Run the app
