@@ -24,3 +24,4 @@
 		<li><a href="pagination" class="menu-link">Pagination</a></li>
 	</ul>
 </div>
+<?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/docs-menu.blade.php ENDPATH**/ ?>

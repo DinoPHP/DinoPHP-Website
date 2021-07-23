@@ -11,3 +11,5 @@ Route::get('/middleware', 'Controller@middleware');
 Route::get('/controllers', 'Controller@controllers');
 Route::get('/requests', 'Controller@requests');
 Route::get('/response', 'Controller@response');
+Route::get('/blade-template', 'Controller@blade_template');
+Route::get('/urls', 'Controller@urls');

@@ -30,4 +30,10 @@ class Controller {
 	public function response() {
 		return view('response');
 	}
+	public function blade_template() {
+		return view('blade-template');
+	}
+	public function urls() {
+		return view('urls');
+	}
 }
