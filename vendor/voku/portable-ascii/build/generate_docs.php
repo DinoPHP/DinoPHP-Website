@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../styles/autoload.php';
+require __DIR__ . '/styles/autoload.php';
 
 $readmeGenerator = new \voku\PhpReadmeHelper\GenerateApi();
 $readmeGenerator->templateMethod = <<<RAW

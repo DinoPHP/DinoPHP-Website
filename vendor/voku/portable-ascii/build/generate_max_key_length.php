@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../styles/autoload.php';
 
 $languages = \voku\helper\ASCII::getAllLanguages();
 

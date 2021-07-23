@@ -53,4 +53,4 @@ jobs:
           command: composer update --no-interaction --no-progress
 
       - name: Execute PHPUnit
-        run: vendor/bin/phpunit
+        run: styles/bin/phpunit

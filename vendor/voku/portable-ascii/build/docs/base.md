@@ -103,7 +103,7 @@ composer install
 2) The tests can be executed by running this command from the root directory:
 
 ```bash
-./vendor/bin/phpunit
+./styles/bin/phpunit
 ```
 
 ### Support

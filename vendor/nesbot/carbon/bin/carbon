@@ -4,7 +4,7 @@
 $dir = __DIR__.'/..';
 
 if (!file_exists($dir.'/autoload.php')) {
-    $dir = __DIR__.'/../vendor';
+    $dir = __DIR__.'/../styles';
 }
 
 if (!file_exists($dir.'/autoload.php')) {

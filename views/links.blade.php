@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('vendor/style.css') }}">
+<link rel="stylesheet" href="{{ asset('styles/style.css') }}">
 <link rel="icon" href="{{ asset('pics/DinoPHP-icon.png') }}">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
