@@ -18,4 +18,7 @@ class Controller {
 	public function routing() {
 		return view('routing');
 	}
+	public function middleware() {
+		return view('middleware');
+	}
 }
