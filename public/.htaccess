@@ -19,3 +19,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+<IfModule mod_rewrite.c>
+  DirectorySlash Off
+  RewriteEngine on
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

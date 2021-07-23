@@ -53,7 +53,7 @@ return 'First application';
 				</div>
 
 				<div id="root-directory">
-					<a href="#root-directory"><h4 style="font-weight: bold"><span class="hashtag">#</span> Root Directory</h4></a>
+					<a href="#root-directory"><h4 style="font-weight: bold"><span class="hashtag">#</span> Default route files</h4></a>
 
 					<div style="margin-top: 3%;">
 
