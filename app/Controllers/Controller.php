@@ -9,4 +9,13 @@ class Controller {
 	public function docs() {
 		return view('docs');
 	}
+	public function installation() {
+		return view('installation');
+	}
+	public function directories() {
+		return view('directories');
+	}
+	public function routing() {
+		return view('routing');
+	}
 }
