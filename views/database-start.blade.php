@@ -77,30 +77,6 @@ driver://username:password@host:port/database?options
                     Some managed database providers such as AWS and Heroku provide a single database "URL" that contains all of the connection information for the database in a single string.
                 </p>
 
-                <div class="code">
-					<?php
-					highlight_string('
-<?php
-throw new \ReflectionException("This is Reflection error");
-?>
-                        ');
-					?>
-                </div>
-
-                <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                    How to write a code for handling invalid argument errors ? This is an example of simple code :
-                </p>
-
-                <div class="code">
-					<?php
-					highlight_string('
-<?php
-throw new \InvalidArgumentException("This is argument exception");
-?>
-                        ');
-					?>
-                </div>
-
             </div>
         </div>
     </div>
