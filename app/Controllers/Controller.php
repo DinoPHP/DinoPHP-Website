@@ -45,4 +45,7 @@ class Controller {
 	public function error_handle() {
 		return view('error-handle');
 	}
+	public function database() {
+		return view('database-start');
+	}
 }
