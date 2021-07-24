@@ -33,7 +33,7 @@ class Controller {
 	public function blade_template() {
 		return view('blade-template');
 	}
-	public function urls() {
-		return view('urls');
+	public function sessions() {
+		return view('sessions');
 	}
 }

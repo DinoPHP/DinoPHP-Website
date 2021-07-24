@@ -12,8 +12,7 @@
 		<li><a href="requests" class="menu-link">Requests</a></li>
 		<li><a href="response" class="menu-link">Response</a></li>
 		<li><a href="blade-template" class="menu-link">Blade Template</a></li>
-		<li><a href="urls" class="menu-link">Url Generation</a></li>
-		<li><a href="session" class="menu-link">Session</a></li>
+		<li><a href="sessions" class="menu-link">Session</a></li>
 		<li><a href="validation" class="menu-link">Validation</a></li>
 		<li><a href="error-handle" class="menu-link">Error Handling</a></li>
 	</ul>
