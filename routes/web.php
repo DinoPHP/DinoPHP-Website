@@ -17,3 +17,4 @@ Route::get('/validation', 'Controller@validation');
 Route::get('/team', 'Controller@team');
 Route::get('/error-handle', 'Controller@error_handle');
 Route::get('/database-start', 'Controller@database');
+Route::get('/queries', 'Controller@queries');

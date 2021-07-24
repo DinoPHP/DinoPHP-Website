@@ -48,4 +48,7 @@ class Controller {
 	public function database() {
 		return view('database-start');
 	}
+	public function queries() {
+		return view('queries');
+	}
 }
