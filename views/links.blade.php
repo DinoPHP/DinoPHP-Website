@@ -11,7 +11,7 @@
 <?php
 function page_title($url) {
 
-	$page = file_get_contents($url);
+	$page = file_get_contents("https://dinophp/" . $_SERVER['REQUEST_URI']);
 
 	if (!$page) return null;
 
