@@ -57,13 +57,13 @@
 <body>
 <div class="error">
     <div class="image">
-        <img src="{{asset ('pics/dino-black.png')}}">
+        <img src="<?php echo e(asset ('pics/dino-black.png')); ?>">
     </div>
     <h1>404</h1>
     <p>not found</p>
     <div class="buttons">
-        <a href="https://DinoPHP.com/docs"><button class="docs">Documentation</button></a>
+        <a href="https://DinoPHP/docs"><button class="docs">Documentation</button></a>
     </div>
 </div>
 </body>
-</html>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/errors/404.blade.php ENDPATH**/ ?>
