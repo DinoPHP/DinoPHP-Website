@@ -1,4 +1,5 @@
 <?php
+    use DinoPHP\Http\Request;
 ?>
 <html>
 <head>

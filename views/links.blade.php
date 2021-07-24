@@ -6,3 +6,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
+
+<?php
+function page_title($url) {
+
+	$page = file_get_contents($url);
+
+	if (!$page) return null;
+
+	$matches = array();
+
+	if (preg_match('/<title>(.*?)<\/title>/', $page, $matches)) {
+		return $matches[1];
+	} else {
+		return null;
+	}
+}
+$actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
+<meta property="og:title" content="<?php echo page_title("$actual_link"); ?>">
+<meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
+<meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
+<meta property="og:url" content="https://dinophp.com/">
