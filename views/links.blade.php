@@ -11,7 +11,7 @@
 <?php
 function page_title($url) {
 
-	$page = file_get_contents("https://dinophp/" . $_SERVER['REQUEST_URI']);
+	$page = file_get_contents($url);
 
 	if (!$page) return null;
 
@@ -24,7 +24,7 @@ function page_title($url) {
 	}
 }
 ?>
-<meta property="og:title" content="<?php echo page_title("https://dinophp/" . $_SERVER['REQUEST_URI']); ?>">
+<meta property="og:title" content="<?php echo page_title("https://dinophp/docs"); ?>">
 <meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
 <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
 <meta property="og:url" content="https://dinophp.com/">
