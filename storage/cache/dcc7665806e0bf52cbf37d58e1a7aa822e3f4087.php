@@ -6,4 +6,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-<?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/links.blade.php ENDPATH**/ ?>
+<meta name="description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
+<meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
+<meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
+<meta property="og:url" content="https://dinophp.com/">
+<meta name="google-site-verification" content="_o-T2rIVsN3zX6wyzp5NfyPbAAxwkLQ6Rt89soYwF7A" /><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/links.blade.php ENDPATH**/ ?>

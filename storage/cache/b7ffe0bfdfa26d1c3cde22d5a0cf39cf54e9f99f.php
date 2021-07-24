@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav" style="color:#444444;font-weight: 500;margin-top: 5px;margin-left:3%;font-size: 17px;">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/team">Our Team</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/docs">Documentation</a>

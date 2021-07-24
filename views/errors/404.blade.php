@@ -1,6 +1,3 @@
-<?php
-    use DinoPHP\Http\Request;
-?>
 <html>
 <head>
     <title>That page doesn't exist!</title>

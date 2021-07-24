@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>Our Team - DinoPHP Framework</title>
-@include('links')
+<?php echo $__env->make('links', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
 
 <body>
-@include('navbar')
+<?php echo $__env->make('navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 <div class="container">
     <h1 style="font-weight: bold">The Dinophp Team</h1>
@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col-lg-3">
-            <img src="{{ asset('pics/team/ahmedmohamed.jpg') }}" style="width: 280px;height: 280px;object-fit: cover;border-radius: .5rem!important;">
+            <img src="<?php echo e(asset('pics/team/ahmedmohamed.jpg')); ?>" style="width: 280px;height: 280px;object-fit: cover;border-radius: .5rem!important;">
             <div class="info" style="margin-top: 7%;">
                 <h4 class="name" style="font-weight: bold;color: #e92644;">Ahmed Mohamed</h4>
                 <h5 class="address" style="color: #585858;font-weight: 400;">Alexandria, Egypt</h5>
@@ -27,7 +27,7 @@
     </div>
 </div>
 
-@include('footer')
+<?php echo $__env->make('footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
-@include('scripts')
-</html>
+<?php echo $__env->make('scripts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP-web\views/team.blade.php ENDPATH**/ ?>

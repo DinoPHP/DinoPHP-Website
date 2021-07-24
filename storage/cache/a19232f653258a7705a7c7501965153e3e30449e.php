@@ -1,6 +1,3 @@
-<?php
-    use DinoPHP\Http\Request;
-?>
 <html>
 <head>
     <title>That page doesn't exist!</title>
@@ -64,9 +61,6 @@
     <p>not found</p>
     <div class="buttons">
         <a href="https://DinoPHP.com/docs"><button class="docs">Documentation</button></a>
-        <?php
-            $uri = $request->full_path();
-	    ?>
     </div>
 </div>
 </body>
