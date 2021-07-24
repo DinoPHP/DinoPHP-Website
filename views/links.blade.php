@@ -24,7 +24,7 @@ function page_title($url) {
 	}
 }
 ?>
-<meta property="og:title" content="<?php echo page_title(""); ?>">
+<meta property="og:title" content="">
 <meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
 <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
 <meta property="og:url" content="https://dinophp.com/">
