@@ -28,15 +28,15 @@
             @include('docs-menu')
         </div>
         <div class="col-lg">
-            <a href="#blade"><h3 style="font-weight: bold"><span class="hashtag">#</span> Error Handling</h3></a>
-            <div id="blade" style="margin-top: 5%;">
+            <a href="#handling"><h3 style="font-weight: bold"><span class="hashtag">#</span> Error Handling</h3></a>
+            <div id="handling" style="margin-top: 5%;">
 
-                <a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
+                <a href="#introduction"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                     When you start a new DinoPHP project, error and exception handling is already configured for you. The src\Exceptions\Whoops class is where all exceptions thrown by your application are logged and then rendered to the user. We'll dive deeper into this class throughout this documentation.
                 </p>
 
-                <a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> How To Write Exception</h4></a>
+                <a href="#introduction"><h4 style="font-weight: bold"><span class="hashtag">#</span> How To Write Exception</h4></a>
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                     This is an example of how to write a function for handle the errors for know where is this error in your code and more details like requests information and etc ..
                 </p>
