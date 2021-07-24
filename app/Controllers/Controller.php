@@ -42,4 +42,7 @@ class Controller {
 	public function team() {
 		return view('team');
 	}
+	public function error_handle() {
+		return view('error-handle');
+	}
 }
