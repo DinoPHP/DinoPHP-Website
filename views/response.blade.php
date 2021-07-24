@@ -100,7 +100,7 @@ Route::get('/home', function () {
 
                     <a href=""><h5 style="font-weight: bold"><span class="hashtag">#</span> Eloquent Models & Collections</h5></a>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                        You may also return ORM models and collections directly from your routes and controllers. When you do, Laravel will automatically convert the models and collections to JSON responses while respecting the model's hidden attributes:
+                        You may also return ORM models and collections directly from your routes and controllers. When you do, DinoPHP will automatically convert the models and collections to JSON responses while respecting the model's hidden attributes:
                     </p>
 
                     <div class="code">

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Sessions - DinoPHP Framework</title>
+    <title>Validation - DinoPHP Framework</title>
     <style>
 
         .menu-link {
@@ -28,13 +28,13 @@
             @include('docs-menu')
         </div>
         <div class="col-lg">
-            <a href="#sessions"><h3 style="font-weight: bold"><span class="hashtag">#</span> Sessions</h3></a>
+            <a href="#sessions"><h3 style="font-weight: bold"><span class="hashtag">#</span> Validation</h3></a>
             <div id="sessions" style="margin-top: 5%;">
 
                 <div id="basics">
                     <a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                        Since HTTP driven applications are stateless, sessions provide a way to store information about the user across multiple requests. That user information is typically placed in a persistent store / backend that can be accessed from subsequent requests.
+                        DinoPHP provides approach to validate your application's incoming data. It is most common to use the validate method available on all incoming HTTP requests. However, we will discuss other approaches to validation as well.
                     </p>
                 </div>
 

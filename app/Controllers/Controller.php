@@ -36,4 +36,7 @@ class Controller {
 	public function sessions() {
 		return view('sessions');
 	}
+	public function validation() {
+		return view('validation');
+	}
 }
