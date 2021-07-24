@@ -23,7 +23,6 @@ function page_title($url) {
 		return null;
 	}
 }
-$actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 <meta property="og:title" content="<?php echo page_title("$actual_link"); ?>">
 <meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
