@@ -18,8 +18,8 @@
 	</ul>
 	<span style="font-weight: 500;text-transform: uppercase;">Database</span>
 	<ul>
-		<li><a href="get-started" class="menu-link">Getting Started</a></li>
-		<li><a href="query" class="menu-link">Query</a></li>
+		<li><a href="database-start" class="menu-link">Getting Started</a></li>
+		<li><a href="queries" class="menu-link">Query</a></li>
 		<li><a href="pagination" class="menu-link">Pagination</a></li>
 	</ul>
 </div>
