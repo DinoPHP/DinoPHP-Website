@@ -40,96 +40,43 @@
 
                 <div id="root-directory">
                     <div style="margin-top: 3%;">
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Configuration</h5></a>
+                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Writing the validation method</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            Your application's session configuration file is stored at src/session.php. Be sure to review the options available to you in this file. By default, Dinophp is configured to use the file session driver, which will work well for many applications. If your application will be load balanced across multiple web servers, you should choose a centralized store that all servers can access, such as Redis or a database.
+                            Now we are ready to fill in our store method with the logic to validate the new blog post. To do this, we will use the validate method provided by the \Http\Request object. If the validation rules pass, your code will keep executing normally; however, if validation fails, an exception will be thrown and the proper error response will automatically be sent back to the user.
                         </p>
-
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            The session driver configuration option defines where session data will be stored for each request. Dinophp ships with several great drivers out of the box:
+                            If validation fails during a traditional HTTP request, a redirect response to the previous URL will be generated. If the incoming request is an XHR request, a JSON response containing the validation error messages will be returned.
                         </p>
-
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Retrieving All Session Data</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            If you would like to retrieve all the data in the session, you may use the <b>all</b> method:
+                            To get a better understanding of the validate method, let's jump back into the store method:
                         </p>
 
                         <div class="code">
 							<?php
 							highlight_string('
 <?php
-$data = $request->session()->all();
+$validation = $validator->validate($_POST + $_FILES, $rules);
+$errors = $validation->errors();
 ?>
                         ');
 							?>
                         </div>
-
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Determining If An Item Exists In The Session</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            To determine if an item is present in the session, you may use the <b>has</b> method. The has method returns true if the item is present and is not null:
+                            As you can see, the validation rules are passed into the validate method. Don't worry - all available validation rules are documented. Again, if the validation fails, the proper response will automatically be generated. If the validation passes, our controller will continue executing normally.
                         </p>
-
                         <div class="code">
-							<?php
-							highlight_string('
+		                    <?php
+		                    highlight_string('
 <?php
-if ($request->session()->has("users")) {
-    //
-}
+$validatedData = $request->validate([
+    "title" => ["required", "unique:posts", "max:255"],
+    "body" => ["required"],
+]);
 ?>
                         ');
-							?>
+		                    ?>
                         </div>
 
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Storing Data</h5></a>
-                        <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            To store data in the session, you will typically use the request instance's <b>set</b> method or the global session helper:
-                        </p>
-
-                        <div class="code">
-							<?php
-							highlight_string('
-<?php
-if ($request->session()->set("users")) {
-    //
-}
-?>
-                        ');
-							?>
-                        </div>
-
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Start Session</h5></a>
-                        <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            To start the session, you will typically use the <b>start</b> method or the global session helper:
-                        </p>
-
-                        <div class="code">
-							<?php
-							highlight_string("
-<?php
-if (! session_id()) {
-	ini_set('session.use_only_cookies', 1);
-	session_start();
-}
-?>
-                        ");
-							?>
-                        </div>
-
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Remove / Unset Session</h5></a>
-                        <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            To unset the session, you will typically use the <b>remove</b> method or the global session helper:
-                        </p>
-
-                        <div class="code">
-							<?php
-							highlight_string('
-<?php
-unset($_SESSION[$key]);
-?>
-                        ');
-							?>
-                        </div>
 
                     </div>
                 </div>
