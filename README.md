@@ -16,7 +16,7 @@ composer create-project --prefer-dist ahmedibrahim/dinophp dinophp
 DinoPHP has the most extensive and thorough [documentation](https://dinophp.com/docs), making it a breeze to get started with the framework.
 
 ## DinoPHP Sponsors
-We would like to extend our thanks to the following sponsors for funding DinoPHP development. If you are interested in becoming a sponsor, please visit the DinoPHP [Patreon page](https://patreon.com/dinophp).
+We would like to extend our thanks to the following sponsors for funding DinoPHP development. If you are interested in becoming a sponsor, please visit the DinoPHP [Patreon page](https://www.patreon.com/ahmedmohammed).
 
 ### Our Partners
 
