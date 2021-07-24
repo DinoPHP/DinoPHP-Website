@@ -8,7 +8,7 @@
 <body>
 @include('navbar')
 
-<div class="container">
+<div class="container" style="margin-bottom: 5%;">
     <h1 style="font-weight: bold">The Dinophp Team</h1>
     <p style="font-size: 20px;color: #6b6b6b;">DinoPHP is a team of passionate developers from all around the world.<br>
         Follow us on Twitter and GitHub to keep up with what we're working on!</p>
