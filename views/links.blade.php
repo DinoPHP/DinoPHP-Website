@@ -7,24 +7,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 <meta name="description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
-
-<?php
-function page_title($url) {
-	$fp = file_get_contents($url);
-	if (!$fp)
-		return null;
-
-	$res = preg_match("/<title>(.*)<\/title>/siU", $fp, $title_matches);
-	if (!$res)
-		return null;
-
-	// Clean up title: remove EOL's and excessive whitespace.
-	$title = preg_replace('/\s+/', ' ', $title_matches[1]);
-	$title = trim($title);
-	return $title;
-}
-?>
-<meta property="og:title" content="<?php print page_title("https://dinophp/docs"); ?>">
 <meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
 <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
 <meta property="og:url" content="https://dinophp.com/">
