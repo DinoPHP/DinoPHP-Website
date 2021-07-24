@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-lg-3">
 
-            <div class="person" style="margin-top: 5%;">
+            <div class="person" style="margin-top: 15%;">
                 <img src="{{ asset('pics/team/ahmedmohamed.jpg') }}" style="width: 280px;height: 280px;object-fit: cover;border-radius: .5rem!important;">
                 <div class="info" style="margin-top: 7%;">
                     <h4 class="name" style="font-weight: bold;color: #e92644;">Ahmed Mohamed</h4>
