@@ -39,4 +39,7 @@ class Controller {
 	public function validation() {
 		return view('validation');
 	}
+	public function team() {
+		return view('team');
+	}
 }

@@ -14,3 +14,4 @@ Route::get('/response', 'Controller@response');
 Route::get('/blade-template', 'Controller@blade_template');
 Route::get('/sessions', 'Controller@sessions');
 Route::get('/validation', 'Controller@validation');
+Route::get('/team', 'Controller@team');
