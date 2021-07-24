@@ -19,8 +19,9 @@
             <div class="info" style="margin-top: 7%;">
                 <h4 class="name" style="font-weight: bold;color: #e92644;">Ahmed Mohamed</h4>
                 <h5 class="address" style="color: #585858;font-weight: 400;">Alexandria, Egypt</h5>
-                <div class="social">
-                    <a class="https://twitter.com/ahmedmohammedx"><i class="fab fa-twitter"></i></a>
+                <div class="social" style="display: flex;flex-direction: row;gap: 25px;">
+                    <a href="https://twitter.com/ahmedmohammedx"><i class="fab fa-twitter" style="font-size: 22px;color: #3e3e3e;"></i></a>
+                    <a href="https://github.com/Ahmed-Ibrahimm"><i class="fab fa-github" style="font-size: 22px;color: #3e3e3e;"></i></a>
                 </div>
             </div>
         </div>
