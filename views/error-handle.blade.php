@@ -28,13 +28,19 @@
             @include('docs-menu')
         </div>
         <div class="col-lg">
-            <a href="#blade"><h3 style="font-weight: bold"><span class="hashtag">#</span> Blade Template</h3></a>
+            <a href="#blade"><h3 style="font-weight: bold"><span class="hashtag">#</span> Error Handling</h3></a>
             <div id="blade" style="margin-top: 5%;">
 
                 <a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                    Blade is the simple, yet powerful templating engine that is included with DinoPHP. Unlike some PHP templating engines, Blade does not restrict you from using plain PHP code in your templates. In fact, all Blade templates are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your application. Blade template files use the .blade.php file extension and are typically stored in the /views directory.
+                    When you start a new DinoPHP project, error and exception handling is already configured for you. The src\Exceptions\Whoops class is where all exceptions thrown by your application are logged and then rendered to the user. We'll dive deeper into this class throughout this documentation.
                 </p>
+
+                <a href="#basics"><h4 style="font-weight: bold"><span class="hashtag">#</span> How To Write Exception</h4></a>
+                <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
+                    When you start a new DinoPHP project, error and exception handling is already configured for you. The src\Exceptions\Whoops class is where all exceptions thrown by your application are logged and then rendered to the user. We'll dive deeper into this class throughout this documentation.
+                </p>
+
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                     Blade views may be returned from routes or controller using the global view helper. Of course, as mentioned in the documentation on views, data may be passed to the Blade view using the view helper's second argument:
                 </p>
