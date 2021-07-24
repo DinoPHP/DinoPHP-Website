@@ -51,7 +51,7 @@
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Retrieving All Session Data</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            If you would like to retrieve all the data in the session, you may use the all method:
+                            If you would like to retrieve all the data in the session, you may use the <b>all</b> method:
                         </p>
 
                         <div class="code">
@@ -66,14 +66,13 @@ $data = $request->session()->all();
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Determining If An Item Exists In The Session</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            To determine if an item is present in the session, you may use the has method. The has method returns true if the item is present and is not null:
+                            To determine if an item is present in the session, you may use the <b>has</b> method. The has method returns true if the item is present and is not null:
                         </p>
 
                         <div class="code">
 							<?php
 							highlight_string('
 <?php
-
 if ($request->session()->has("users")) {
     //
 }
@@ -82,8 +81,27 @@ if ($request->session()->has("users")) {
 							?>
                         </div>
 
+                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Storing Data</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            Sometimes you may need to register a route that responds to multiple HTTP verbs. You may do so using the match method. Or, you may even register a route that responds to all HTTP verbs using the any method:
+                            To store data in the session, you will typically use the request instance's <b>set</b> method or the global session helper:
+                        </p>
+
+                        <div class="code">
+							<?php
+							highlight_string('
+<?php
+
+if ($request->session()->set("users")) {
+    //
+}
+?>
+                        ');
+							?>
+                        </div>
+
+                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Start Session</h5></a>
+                        <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
+                            To start the session, you will typically use the <b>start</b> method or the global session helper:
                         </p>
 
                         <div class="code">
@@ -91,18 +109,32 @@ if ($request->session()->has("users")) {
 							highlight_string("
 <?php
 
-Route::match(['get', 'post'], '/', function () {
-    //
-});
-
-Route::any('/', function () {
-    //
-});
-
+if (! session_id()) {
+			ini_set('session.use_only_cookies', 1);
+			session_start();
+}
 ?>
                         ");
 							?>
                         </div>
+
+                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Remove / Unset Session</h5></a>
+                        <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
+                            To unset the session, you will typically use the <b>remove</b> method or the global session helper:
+                        </p>
+
+                        <div class="code">
+							<?php
+							highlight_string('
+<?php
+
+unset($_SESSION[$key]);
+?>
+                        ');
+							?>
+                        </div>
+
+
 
                     </div>
                 </div>
