@@ -51,4 +51,7 @@ class Controller {
 	public function queries() {
 		return view('queries');
 	}
+	public function pagination() {
+		return view('pagination');
+	}
 }
