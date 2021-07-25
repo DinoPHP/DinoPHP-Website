@@ -48,7 +48,7 @@
                         </p>
 
                         <div class="code">
-&lt;input type="hidden" name="token" value="<?php echo('{{' . 'create_csrf()' . '}}') ?>"&gt;
+&lt;input type="hidden" name="token" value="<?php echo('{{  ' . 'create_csrf()' . ' }}') ?>"&gt;
                         </div>
 
                     </div>
