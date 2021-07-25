@@ -59,7 +59,7 @@ return view("user.index", [
 					?>
                 </div>
 
-                <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> Pagination</h4></a>
+                <a href="#pagination"><h4 style="font-weight: bold"><span class="hashtag">#</span> Paginate</h4></a>
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                     The <b>paginate</b> method counts the total number of records matched by the query before retrieving the records from the database. This is done so that the paginator knows how many pages of records there are in total. However, if you do not plan to show the total number of pages in your application's UI then the record count query is unnecessary.
                 </p>
