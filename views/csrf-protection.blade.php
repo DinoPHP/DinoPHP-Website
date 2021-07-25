@@ -48,14 +48,10 @@
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
-<form method="POST" action="/profile">
-    <input type="hidden" name="token" value="{{ create_csrf() }}" />
-</form>
-                        ');
-							?>
+                            <code>
+                                <input type='hidden' name='token' value='<?php highlight_string("{{ create_csrf() }}") ?>'>
+                            </code>
+
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
