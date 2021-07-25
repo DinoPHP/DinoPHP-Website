@@ -49,7 +49,7 @@
 
                         <div class="code">
                             <code>
-                                <input type='hidden' name='token' value='<?php highlight_string("{{ create_csrf() }}") ?>'>
+                                <input type='hidden' name='token' value='<?php highlight_string("{{ create_csrf }}") ?>'>
                             </code>
 
                         </div>
