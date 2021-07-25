@@ -24,6 +24,9 @@ class Controller {
 	public function controllers() {
 		return view('controllers');
 	}
+	public function csrf() {
+		return view('csrf-protection');
+	}
 	public function requests() {
 		return view('requests');
 	}

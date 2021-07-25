@@ -9,6 +9,7 @@
 		<li><a href="routing" class="menu-link">Routing</a></li>
 		<li><a href="middleware" class="menu-link">Middleware</a></li>
 		<li><a href="controllers" class="menu-link">Controllers</a></li>
+		<li><a href="csrf-protection" class="menu-link">CSRF Protection</a></li>
 		<li><a href="requests" class="menu-link">Requests</a></li>
 		<li><a href="response" class="menu-link">Response</a></li>
 		<li><a href="blade-template" class="menu-link">Blade Template</a></li>
