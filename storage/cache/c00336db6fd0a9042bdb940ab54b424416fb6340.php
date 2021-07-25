@@ -1,4 +1,4 @@
-<hr class="dropdown-divider" style="margin-bottom: 2%;max-width: 81%;margin-left: auto;margin-right: auto;">
+<hr class="dropdown-divider" style="margin-bottom: 2%;max-width: 81%;margin-left: auto;margin-right: auto;margin-top: 5%;">
 <footer>
     <div class="container">
         <div class="row">
