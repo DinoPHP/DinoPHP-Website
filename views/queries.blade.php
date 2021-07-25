@@ -51,7 +51,32 @@ return Database::instance();
                         ");
 					?>
                 </div>
-                
+
+                <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> Database Query</h4></a>
+                <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
+                    You may use the <b>table</b> or <b>query</b> method provided by the Database facade to begin a query. The table method returns a fluent query builder instance for the given table, allowing you to chain more constraints onto the query and then finally retrieve the results of the query using the get method:
+                </p>
+
+                <div class="code">
+		            <?php
+		            highlight_string('
+<?php
+$db = Database::query("SELECT * FROM users WHERE id > 1")->get();
+?>
+                        ');
+		            ?>
+                </div>
+                This is the same function but with table and where method :
+                <div class="code">
+		            <?php
+		            highlight_string('
+<?php
+$db = Database::table("users")->where->get("id", ">", "1")->get();
+?>
+                        ');
+		            ?>
+                </div>
+
             </div>
         </div>
     </div>
