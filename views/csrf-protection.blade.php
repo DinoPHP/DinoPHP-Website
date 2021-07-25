@@ -49,9 +49,9 @@
 
                         <div class="code">
                             <?php
-                                highlight_string("
-                                &lt;input type='hidden' name='token' value='{{create_csrf()}}'&gt;
-                                ")
+                                highlight_string('
+                                &lt;input type="hidden" name="token" value="{{ create_csrf() }}"&gt;
+                                ')
                             ?>
 
                         </div>
