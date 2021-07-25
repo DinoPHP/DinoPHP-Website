@@ -28,13 +28,13 @@
             @include('docs-menu')
         </div>
         <div class="col-lg">
-            <a href="#controllers"><h3 style="font-weight: bold"><span class="hashtag">#</span> Controllers</h3></a>
+            <a href="#controllers"><h3 style="font-weight: bold"><span class="hashtag">#</span> CSRF Protection</h3></a>
             <div id="controllers" style="margin-top: 5%;">
 
                 <div id="intro">
                     <a href="#intro"><h4 style="font-weight: bold"><span class="hashtag">#</span> Introduction</h4></a>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                        Instead of defining all of your request handling logic as closures in your route files, you may wish to organize this behavior using "controller" classes. Controllers can group related request handling logic into a single class. For example, a UserController class might handle all incoming requests related to users, including showing, creating, updating, and deleting users. By default, controllers are stored in the app/Controllers directory.
+                        Cross-site request forgeries are a type of malicious exploit whereby unauthorized commands are performed on behalf of an authenticated user. Thankfully, DinoPHP makes it easy to protect your application from cross-site request forgery (CSRF) attacks.
                     </p>
 
                 </div>
@@ -42,33 +42,21 @@
                 <div id="root-directory">
                     <div style="margin-top: 3%;">
 
-                        <a href="#"><h4 style="font-weight: bold"><span class="hashtag">#</span> Writing Controller</h4></a>
-                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Basic Controller</h5></a>
+                        <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Preventing CSRF Requests</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            Let's take a look at an example of a basic controller. Note that the controller extends the base controller class included with Dinophp: <b>App\Controllers\Controller :</b>
+                            Anytime you define a "POST", "PUT", "PATCH", or "DELETE" HTML form in your application, so that the CSRF protection middleware can validate the request. For convenience, you may use the @csrf Blade directive to generate the hidden token input field:
                         </p>
 
                         <div class="code">
 							<?php
-							highlight_string('
+							highlight_string("
 <?php
 
-namespace App\Controllers;
-
-class UserController
-{
-    /**
-     * Show the profile for a given user.
-     *
-     * @param  int  $id
-     * @return \Illuminate\View\View
-     */
-    public function show($id)
-    {
-        return view("user.profile");
-    }
-}
-                        ');
+<form method='POST' action='/profile'>
+    <!-- Equivalent to... -->
+    <input type='hidden' name='token' value='{{ csrf_token() }}' />
+</form>
+                        ");
 							?>
                         </div>
 
