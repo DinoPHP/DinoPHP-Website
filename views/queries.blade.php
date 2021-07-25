@@ -85,7 +85,7 @@ $db = Database::table("users")->where("id", ">", "1")->get();
 
                 <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> Retrieving single Row</h4></a>
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                    If you just need to retrieve a single row from a database table, you may use the Database facade's first method :
+                    If you just need to retrieve a single row from a database table, you may use the Database facade's <b>first</b> method :
                 </p>
                 <div class="code">
 		            <?php
@@ -106,16 +106,16 @@ $db = Database::table("users")->first();
 		            highlight_string('
 <?php
 $db = Database::table("users")
-        ->select("name", "age")
-        ->rightJoin("roles", "roles.id", "=", "users.role_id")
-        ->leftJoin("roles", "roles.id", "=", "users.role_id")
-        ->join("roles", "roles.id", "=", "users.role_id")
-        ->where("id", "=", "20")
-        ->orWhere("name", "=", "ahmed")
-        ->orderBy("id", "desc")
-        ->limit(20)
-        ->offset(20)
-        ->getQuery();
+                ->select("name", "age")
+                ->rightJoin("roles", "roles.id", "=", "users.role_id")
+                ->leftJoin("roles", "roles.id", "=", "users.role_id")
+                ->join("roles", "roles.id", "=", "users.role_id")
+                ->where("id", "=", "20")
+                ->orWhere("name", "=", "ahmed")
+                ->orderBy("id", "desc")
+                ->limit(20)
+                ->offset(20)
+                ->getQuery();
 ?>
                         ');
 		            ?>
