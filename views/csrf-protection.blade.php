@@ -48,7 +48,7 @@
                         </p>
 
                         <div class="code">
-                            &lt;input type='hidden' name='token' value='{{ create_csrf() }}'&gt;
+                            <pre>&lt;input type='hidden' name='token' value='{{create_csrf()}}'&gt;</pre>
                         </div>
 
                     </div>
