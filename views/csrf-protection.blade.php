@@ -48,7 +48,12 @@
                         </p>
 
                         <div class="code">
-                            <pre>&lt;input type='hidden' name='token' value='{{create_csrf()}}'&gt;</pre>
+                            <?php
+                                highlight_string("
+                                &lt;input type='hidden' name='token' value='{{create_csrf()}}'&gt;
+                                ")
+                            ?>
+
                         </div>
 
                     </div>
