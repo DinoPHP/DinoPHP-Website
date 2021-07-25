@@ -44,13 +44,13 @@
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Preventing CSRF Requests</h5></a>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                            Anytime you define a "POST", "PUT", "PATCH", or "DELETE" HTML form in your application, so that the CSRF protection middleware can validate the request. For convenience, you may use the @csrf Blade directive to generate the hidden token input field:
+                            Anytime you define a "POST", "PUT", "PATCH", or "DELETE" HTML form in your application, so that the CSRF protection middleware can validate the request. For convenience, you may use the create_csrf() Blade directive to generate the hidden token input field:
                         </p>
 
                         <div class="code">
                             <?php
                                 highlight_string('
-                                &lt;input type="hidden" name="token" value="{{  }}"&gt;
+                                &lt;input type="hidden" name="token" value="{{ create_csrf() }}"&gt;
                                 ')
                             ?>
 
