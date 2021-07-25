@@ -48,7 +48,9 @@
                         </p>
 
                         <div class="code">
+&lt;form method="POST" action="/profile"&gt;
 &lt;input type="hidden" name="token" value="<?php echo('{{  ' . 'create_csrf()' . ' }}') ?>"&gt;
+&lt;/form&gt;
                         </div>
 
                     </div>
