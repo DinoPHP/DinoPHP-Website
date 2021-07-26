@@ -74,7 +74,7 @@ Route::get('/', function () {
 
                     <a href=""><h5 style="font-weight: bold"><span class="hashtag">#</span> Response Objects</h5></a>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
-                        Typically, you won't just be returning simple strings or arrays from your route actions. Instead, you will be returning full Illuminate\Http\Response instances or views.
+                        Typically, you won't just be returning simple strings or arrays from your route actions. Instead, you will be returning full DinoPHP\Http\Response instances or views.
                     </p>
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                         Typically, you won't just be returning simple strings or arrays from your route actions. Instead, you will be returning full DinoPHP\Http\Response instances or views.
