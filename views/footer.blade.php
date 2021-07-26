@@ -4,21 +4,20 @@
         <div class="row">
             <div class="col-lg" style="display: flex;flex-direction: column;gap: 10px;">
                 <span style="font-weight: bold;text-transform: uppercase;font-size: 18px;">DinoPHP</span>
-                <a href="#">Documentation</a>
-                <a href="#">Our Team</a>
-                <a href="#">Getting Started</a>
+                <a href="docs">Documentation</a>
+                <a href="team">Our Team</a>
+                <a href="installation">Getting Started</a>
                 <a href="#">Release Notes</a>
             </div>
             <div class="col-lg" style="display: flex;flex-direction: column;gap: 10px;">
                 <span style="font-weight: bold;text-transform: uppercase;font-size: 18px;">Services</span>
-                <a href="#">Contact Us</a>
                 <a href="https://github.com/Ahmed-Ibrahimm/DinoPHP">Contribute</a>
-                <a href="#">Donate</a>
+                <a href="https://www.patreon.com/ahmedmohammed">Donate</a>
                 <a href="#">Jobs</a>
             </div>
             <div class="col-lg" style="display: flex;flex-direction: column;gap: 10px;">
                 <span style="font-weight: bold;text-transform: uppercase;font-size: 18px;">Connects</span>
-                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://twitter.com/dino_php"><i class="fab fa-twitter"></i> Twitter</a>
                 <a href="https://github.com/Ahmed-Ibrahimm/DinoPHP"><i class="fab fa-github-alt"></i> Github</a>
                 <a href="#"><i class="fab fa-discord"></i> Discord</a>
             </div>
