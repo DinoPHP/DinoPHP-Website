@@ -4,57 +4,57 @@ namespace App\Controllers;
 
 class Controller {
 	public function index() {
-		return view('index');
+		return view('index.php');
 	}
 	public function docs() {
-		return view('docs');
+		return view('docs.php');
 	}
 	public function installation() {
-		return view('installation');
+		return view('installation.php');
 	}
 	public function directories() {
-		return view('directories');
+		return view('directories.php');
 	}
 	public function routing() {
-		return view('routing');
+		return view('routing.php');
 	}
 	public function middleware() {
-		return view('middleware');
+		return view('middleware.php');
 	}
 	public function controllers() {
-		return view('controllers');
+		return view('controllers.php');
 	}
 	public function csrf() {
-		return view('csrf-protection');
+		return view('csrf-protection.php');
 	}
 	public function requests() {
-		return view('requests');
+		return view('requests.php');
 	}
 	public function response() {
-		return view('response');
+		return view('response.php');
 	}
 	public function blade_template() {
-		return view('blade-template');
+		return view('blade-template.php');
 	}
 	public function sessions() {
-		return view('sessions');
+		return view('sessions.php');
 	}
 	public function validation() {
-		return view('validation');
+		return view('validation.php');
 	}
 	public function team() {
-		return view('team');
+		return view('team.php');
 	}
 	public function error_handle() {
-		return view('error-handle');
+		return view('error-handle.php');
 	}
 	public function database() {
-		return view('database-start');
+		return view('database-start.php');
 	}
 	public function queries() {
-		return view('queries');
+		return view('queries.php');
 	}
 	public function pagination() {
-		return view('pagination');
+		return view('pagination.php');
 	}
 }

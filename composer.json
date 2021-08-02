@@ -1,5 +1,5 @@
 {
-    "name": "ahmedibrahim/dinophp",
+    "name": "dinophp/dinophp",
     "description": "DinoPHP is a web application framework with expressive. We believe development must be an enjoyable and creative experience. DinoPHP takes the pain out of development by easing common tasks used in many web projects",
     "type": "library",
     "license": "MIT",
@@ -9,12 +9,15 @@
             "email": "eng.ahmedmohamed.2002@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.3|^8.0",
         "filp/whoops": "^2.14",
-        "jenssegers/blade": "^1.4",
-        "rakit/validation": "^1.4"
+        "rakit/validation": "^1.4",
+        "vlucas/phpdotenv": "^5.3",
+        "dinophp/bubbletemplate" : "1.0.1",
+        "phpunit/phpunit": "9.5.7",
+        "friendsofphp/php-cs-fixer": "3.0.0"
     },
     "autoload" : {
         "psr-4": {
