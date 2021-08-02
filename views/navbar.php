@@ -22,7 +22,7 @@
           <a class="nav-link" href="https://github.com/Ahmed-Ibrahimm/DinoPHP">Contribute</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://packagist.org/packages/ahmed-ibrahim/dinophp">Download</a>
+          <a class="nav-link" href="https://packagist.org/packages/dinophp/dinophp">Download</a>
         </li>
       </ul>
       <select onchange="location=this.value;" style="padding: 6px;border: 1px solid #CCC;border-radius: 5px;width: 200px;margin-left: auto;outline:none">
