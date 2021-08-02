@@ -110,7 +110,9 @@ class Database {
 	/**
 	 * Database constructor.
 	 */
-	private function __construct() {}
+	private function __construct($table) {
+		static::$table = $table;
+	}
 
 
 	/**
@@ -139,10 +141,11 @@ class Database {
 	/**
 	 * Get the Instance
 	 */
-	private static function instance() {
+	public static function instance() {
 		static::connect();
+		$table = static::$table;
 		if(! self::$instance) {
-			self::$instance = new Database();
+			self::$instance = new Database($table);
 		}
 		return self::$instance;
 	}
@@ -560,4 +563,5 @@ class Database {
 		static::$binding = [];
 		static::$instance = '';
 	}
+
 }

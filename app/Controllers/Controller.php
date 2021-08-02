@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use DinoPHP\Database\Database;
+use DinoPHP\View\View;
+
 class Controller {
 	public function index() {
 		return view('index.php');
@@ -58,6 +61,7 @@ class Controller {
 		return view('pagination.php');
 	}
 	public function blog() {
-		return view('blog/index.php');
+		$blog = Database::table("blog")->get();
+		return View::render('blog/index.php', ['blog' => $blog]);
 	}
 }

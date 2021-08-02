@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b326244628991707725b64864ba2b45909347dc2',
+        'reference' => '6531878f1c07080b970b58067fff0d05c1d99cbe',
         'name' => 'dinophp/dinophp',
         'dev' => true,
     ),
@@ -45,7 +45,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b326244628991707725b64864ba2b45909347dc2',
+            'reference' => '6531878f1c07080b970b58067fff0d05c1d99cbe',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -171,7 +171,7 @@
             'aliases' => array(
                 0 => '5.x-dev',
             ),
-            'reference' => '8719cc12e2a57ec3432a76989bb4ef773ac75b63',
+            'reference' => '78dca372660e5919c3e39e79399d1c76180ab90e',
             'dev_requirement' => false,
         ),
         'phpdocumentor/type-resolver' => array(
