@@ -42,9 +42,6 @@
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string("
-<?php
 return [
 	'host' => '127.0.0.1',
 	'port' => '3306',
@@ -54,9 +51,6 @@ return [
 	'charset' => 'utf8mb4',
 	'collation' => 'utf8mb4_unicode_ci',
 ];
-?>
-                        ");
-					?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -64,13 +58,7 @@ return [
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 driver://username:password@host:port/database?options
-?>
-                        ');
-					?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">

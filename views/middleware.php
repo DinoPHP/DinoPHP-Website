@@ -51,10 +51,6 @@
                         </p>
 
                         <div class="code">
-		                    <?php
-		                    highlight_string("
-<?php
-
 namespace App\Middleware;
 
 class User {
@@ -64,10 +60,6 @@ class User {
 		}
 	}
 }
-
-?>
-                        ");
-		                    ?>
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -75,17 +67,11 @@ class User {
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string("
-<?php
 
 use DinoPHP\Router\Route;
 
 Route::get('/home', 'HomeController@class');
 
-?>
-                        ");
-							?>
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -98,9 +84,6 @@ Route::get('/home', 'HomeController@class');
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 
 Route::add($methods, $uri, $callback);
 Route::get($uri, $callback);
@@ -112,9 +95,6 @@ Route::handle();
 Route::invoke($route, $params);
 Route::executeMiddleware($route);
 
-?>
-                        ');
-							?>
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -122,9 +102,6 @@ Route::executeMiddleware($route);
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string("
-<?php
 
 Route::match(['get', 'post'], '/', function () {
     //
@@ -134,9 +111,6 @@ Route::any('/', function () {
     //
 });
 
-?>
-                        ");
-							?>
                         </div>
 
                     </div>

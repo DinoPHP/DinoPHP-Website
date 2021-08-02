@@ -49,9 +49,7 @@
 
                         <div class="code">
 &lt;form method="POST" action="/profile"&gt;
-<br>
 &lt;input type="hidden" name="token" value="'{ { create_csrf () } }'"&gt;
-<br>
 &lt;/form&gt;
                         </div>
 

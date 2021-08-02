@@ -52,29 +52,17 @@
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 $validation = $validator->validate($_POST + $_FILES, $rules);
 $errors = $validation->errors();
-?>
-                        ');
-							?>
                         </div>
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
                             As you can see, the validation rules are passed into the validate method. Don't worry - all available validation rules are documented. Again, if the validation fails, the proper response will automatically be generated. If the validation passes, our controller will continue executing normally.
                         </p>
                         <div class="code">
-		                    <?php
-		                    highlight_string('
-<?php
 $validatedData = $request->validate([
     "title" => ["required", "unique:posts", "max:255"],
     "body" => ["required"],
 ]);
-?>
-                        ');
-		                    ?>
                         </div>
 
 

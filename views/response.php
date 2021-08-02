@@ -41,17 +41,10 @@
                     </p>
 
                     <div class="code">
-		                <?php
-		                highlight_string("
-<?php
 
 Route::get('/', function () {
     return 'Hello World';
 });
-
-?>
-                        ");
-		                ?>
                     </div>
 
                     <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -59,17 +52,10 @@ Route::get('/', function () {
                     </p>
 
                     <div class="code">
-		                <?php
-		                highlight_string("
-<?php
 
 Route::get('/', function () {
     return [1, 2, 3];
 });
-
-?>
-                        ");
-		                ?>
                     </div>
 
                     <a href=""><h5 style="font-weight: bold"><span class="hashtag">#</span> Response Objects</h5></a>
@@ -84,18 +70,11 @@ Route::get('/', function () {
                     </p>
 
                     <div class="code">
-		                <?php
-		                highlight_string("
-<?php
 
 Route::get('/home', function () {
     return response('Hello World', 200)
                   ->header('Content-Type', 'text/plain');
 });
-
-?>
-                        ");
-		                ?>
                     </div>
 
                     <a href=""><h5 style="font-weight: bold"><span class="hashtag">#</span> Eloquent Models & Collections</h5></a>
@@ -104,19 +83,11 @@ Route::get('/home', function () {
                     </p>
 
                     <div class="code">
-		                <?php
-		                highlight_string('
-<?php
-
 use App\Models\User;
 
 Route::get("/user/{user}", function (User $user) {
     return $user;
 });
-
-?>
-                        ');
-		                ?>
                     </div>
 
                     <a href=""><h5 style="font-weight: bold"><span class="hashtag">#</span> Attaching Headers To Responses</h5></a>
@@ -125,18 +96,10 @@ Route::get("/user/{user}", function (User $user) {
                     </p>
 
                     <div class="code">
-		                <?php
-		                highlight_string('
-<?php
-
 return response($content)
             ->header("Content-Type", $type)
             ->header("X-Header-One", "Header Value")
             ->header("X-Header-Two", "Header Value");
-
-?>
-                        ');
-		                ?>
                     </div>
 
                 </div>

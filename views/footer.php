@@ -18,7 +18,7 @@
             <div class="col-lg" style="display: flex;flex-direction: column;gap: 10px;">
                 <span style="font-weight: bold;text-transform: uppercase;font-size: 18px;">Connects</span>
                 <a href="https://twitter.com/dino_php"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://github.com/Ahmed-Ibrahimm/DinoPHP"><i class="fab fa-github-alt"></i> Github</a>
+                <a href="https://github.com/DinoPHP"><i class="fab fa-github-alt"></i> Github</a>
                 <a href="#"><i class="fab fa-discord"></i> Discord</a>
             </div>
             <div class="col-lg" style="display: flex;flex-direction: column;gap: 10px;">

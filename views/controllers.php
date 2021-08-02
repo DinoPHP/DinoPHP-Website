@@ -49,9 +49,6 @@
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 
 namespace App\Controllers;
 
@@ -76,17 +73,11 @@ class UserController
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string("
-<?php
 
 use App\Controllers\UserController;
 
 Route::get('/user/{id}', [UserController::class, 'show']);
 
-?>
-                        ");
-							?>
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -99,9 +90,6 @@ Route::get('/user/{id}', [UserController::class, 'show']);
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 
 class ProvisionServer
 {
@@ -114,9 +102,6 @@ class ProvisionServer
     }
 }
 
-?>
-                        ');
-							?>
                         </div>
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Controller Middleware</h5></a>
@@ -125,15 +110,9 @@ class ProvisionServer
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string("
-<?php
 
 Route::get('profile', [UserController::class, 'show'])->middleware('auth');
 
-?>
-                        ");
-							?>
                         </div>
 
                         <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -141,10 +120,6 @@ Route::get('profile', [UserController::class, 'show'])->middleware('auth');
                         </p>
 
                         <div class="code">
-		                    <?php
-		                    highlight_string('
-<?php
-
 class UserController extends Controller
 {
     /**
@@ -159,12 +134,7 @@ class UserController extends Controller
         $this->middleware("subscribed")->except("store");
     }
 }
-
-?>
-                        ');
-		                    ?>
                         </div>
-
 
                     </div>
                 </div>

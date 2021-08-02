@@ -37,18 +37,11 @@
                         The most basic Dinophp routes accept a URI and a closure, providing a very simple and expressive method of defining routes and behavior without complicated routing configuration files:
                     </p>
                     <div class="code">
-                        <?php
-                        highlight_string("
-<?php
 use DinoPHP\Router\Route;
 
 Route::get('/congrats', function () {
 	return 'First application';
 });
-?>
-                        ");
-                        ?>
-
                     </div>
 				</div>
 
@@ -65,18 +58,9 @@ Route::get('/congrats', function () {
 						</p>
 
 						<div class="code">
-							<?php
-							highlight_string("
-<?php
-
 use DinoPHP\Router\Route;
 
 Route::get('/home', 'HomeController@class');
-
-?>
-                        ");
-							?>
-
 						</div>
 
 						<p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -89,9 +73,6 @@ Route::get('/home', 'HomeController@class');
 						</p>
 
 						<div class="code">
-							<?php
-							highlight_string('
-<?php
 
 Route::add($methods, $uri, $callback);
 Route::get($uri, $callback);
@@ -103,9 +84,6 @@ Route::handle();
 Route::invoke($route, $params);
 Route::executeMiddleware($route);
 
-?>
-                        ');
-							?>
 						</div>
 
 						<p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -113,9 +91,6 @@ Route::executeMiddleware($route);
 						</p>
 
 						<div class="code">
-							<?php
-							highlight_string("
-<?php
 
 Route::match(['get', 'post'], '/', function () {
     //
@@ -125,9 +100,6 @@ Route::any('/', function () {
     //
 });
 
-?>
-                        ");
-							?>
 						</div>
 
 					</div>

@@ -13,7 +13,7 @@
           <a class="nav-link" href="/docs">Documentation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="/blog">News</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Partners</a>

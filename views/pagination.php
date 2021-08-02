@@ -46,17 +46,9 @@
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 return view("user.index", [
 "users" => Database::table("users")->paginate(15);
 ]
-?>
-                        ');
-
-
-					?>
                 </div>
 
                 <a href="#pagination"><h4 style="font-weight: bold"><span class="hashtag">#</span> Paginate</h4></a>
@@ -65,15 +57,9 @@ return view("user.index", [
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 $users = Database::table("users")->paginate(15);
 
 return View::render("admin.dashboard", ["users" => $users]);
-?>
-                        ');
-					?>
                 </div>
 
             </div>

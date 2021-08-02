@@ -42,15 +42,9 @@
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 if (1 != 1) {
 	throw new \Exception("This is error");
 }
-?>
-                        ');
-					?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -58,17 +52,11 @@ if (1 != 1) {
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 if (is_callable($callback)) {
 	call_user_func($callback);
 } else {
 	throw new \BadFunctionCallException("Please provide valid callback function");
 }
-?>
-                        ');
-					?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -76,13 +64,7 @@ if (is_callable($callback)) {
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 throw new \ReflectionException("This is Reflection error");
-?>
-                        ');
-					?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -90,13 +72,7 @@ throw new \ReflectionException("This is Reflection error");
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string('
-<?php
 throw new \InvalidArgumentException("This is argument exception");
-?>
-                        ');
-					?>
                 </div>
 
                 </div>

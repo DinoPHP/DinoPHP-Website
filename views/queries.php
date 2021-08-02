@@ -43,13 +43,7 @@
                 </p>
 
                 <div class="code">
-					<?php
-					highlight_string("
-<?php
 return Database::instance();
-?>
-                        ");
-					?>
                 </div>
 
                 <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> Retrieving All Rows</h4></a>
@@ -58,15 +52,9 @@ return Database::instance();
                 </p>
 
                 <div class="code">
-		            <?php
-		            highlight_string('
-<?php
 $db = Database::query("SELECT * FROM users")->get();
 // OR
 $db = Database::table("users")->get();
-?>
-                        ');
-		            ?>
                 </div>
 
                 <p style="font-size: 1rem;line-height: 1.8rem;color:#2b2e38">
@@ -74,13 +62,7 @@ $db = Database::table("users")->get();
                 </p>
 
                 <div class="code">
-		            <?php
-		            highlight_string('
-<?php
 $db = Database::table("users")->where("id", ">", "1")->get();
-?>
-                        ');
-		            ?>
                 </div>
 
                 <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> Retrieving single Row</h4></a>
@@ -88,13 +70,7 @@ $db = Database::table("users")->where("id", ">", "1")->get();
                     If you just need to retrieve a single row from a database table, you may use the Database facade's <b>first</b> method :
                 </p>
                 <div class="code">
-		            <?php
-		            highlight_string('
-<?php
 $db = Database::table("users")->first();
-?>
-                        ');
-		            ?>
                 </div>
 
                 <a href="#queries"><h4 style="font-weight: bold"><span class="hashtag">#</span> All Methods</h4></a>
@@ -102,9 +78,6 @@ $db = Database::table("users")->first();
                     Here you will find all methods you will use it in any dynamically project with database :
                 </p>
                 <div class="code">
-		            <?php
-		            highlight_string('
-<?php
 $db = Database::table("users")
                 ->select("name", "age")
                 ->rightJoin("roles", "roles.id", "=", "users.role_id")
@@ -116,9 +89,6 @@ $db = Database::table("users")
                 ->limit(20)
                 ->offset(20)
                 ->getQuery();
-?>
-                        ');
-		            ?>
                 </div>
 
             </div>

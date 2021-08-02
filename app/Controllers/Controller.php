@@ -57,4 +57,7 @@ class Controller {
 	public function pagination() {
 		return view('pagination.php');
 	}
+	public function blog() {
+		return view('blog/index.php');
+	}
 }

@@ -20,3 +20,4 @@ Route::get('/error-handle', 'Controller@error_handle');
 Route::get('/database-start', 'Controller@database');
 Route::get('/queries', 'Controller@queries');
 Route::get('/pagination', 'Controller@pagination');
+Route::get('/blog', 'Controller@blog');

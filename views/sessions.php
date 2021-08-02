@@ -55,13 +55,7 @@
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 $data = $request->session()->all();
-?>
-                        ');
-							?>
                         </div>
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Determining If An Item Exists In The Session</h5></a>
@@ -70,15 +64,9 @@ $data = $request->session()->all();
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 if ($request->session()->has("users")) {
     //
 }
-?>
-                        ');
-							?>
                         </div>
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Storing Data</h5></a>
@@ -87,15 +75,9 @@ if ($request->session()->has("users")) {
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 if ($request->session()->set("users")) {
     //
 }
-?>
-                        ');
-							?>
                         </div>
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Start Session</h5></a>
@@ -104,16 +86,10 @@ if ($request->session()->set("users")) {
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string("
-<?php
 if (! session_id()) {
 	ini_set('session.use_only_cookies', 1);
 	session_start();
 }
-?>
-                        ");
-							?>
                         </div>
 
                         <a href="#"><h5 style="font-weight: bold"><span class="hashtag">#</span> Remove / Unset Session</h5></a>
@@ -122,13 +98,7 @@ if (! session_id()) {
                         </p>
 
                         <div class="code">
-							<?php
-							highlight_string('
-<?php
 unset($_SESSION[$key]);
-?>
-                        ');
-							?>
                         </div>
 
                     </div>

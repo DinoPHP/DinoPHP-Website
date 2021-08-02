@@ -11,3 +11,5 @@
 <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
 <meta property="og:url" content="https://dinophp.com/">
 <meta name="google-site-verification" content="_o-T2rIVsN3zX6wyzp5NfyPbAAxwkLQ6Rt89soYwF7A" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>

@@ -241,3 +241,6 @@ span[style="color: #DD0000"] {
         display: block;
     }
 }
+div.code {
+    white-space: pre;
+}
