@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6531878f1c07080b970b58067fff0d05c1d99cbe',
+        'reference' => '320007487db5c105772d3a0cfc19809517ad7f09',
         'name' => 'dinophp/dinophp',
         'dev' => true,
     ),
@@ -36,7 +36,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../dinophp/bubbletemplate',
             'aliases' => array(),
-            'reference' => '3d2c47c27581264703e2ce4cf0349193039827ce',
+            'reference' => 'ac96eeb0ba4c9b74cb9494832147f18b8e9719e0',
             'dev_requirement' => false,
         ),
         'dinophp/dinophp' => array(
@@ -45,7 +45,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6531878f1c07080b970b58067fff0d05c1d99cbe',
+            'reference' => '320007487db5c105772d3a0cfc19809517ad7f09',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -650,6 +650,15 @@
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
             'reference' => '211a7e38fb6897ee2e4d36112012f1a1b6bf6a98',
+            'dev_requirement' => false,
+        ),
+        'symfony/templating' => array(
+            'pretty_version' => '6.0.x-dev',
+            'version' => '6.0.9999999.9999999-dev',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/templating',
+            'aliases' => array(),
+            'reference' => 'dcad69f70e8cdd588cd1f6dcbef9305aac8ee399',
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(

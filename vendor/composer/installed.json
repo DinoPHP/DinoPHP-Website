@@ -159,12 +159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DinoPHP/BubbleTemplateEngine.git",
-                "reference": "3d2c47c27581264703e2ce4cf0349193039827ce"
+                "reference": "ac96eeb0ba4c9b74cb9494832147f18b8e9719e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DinoPHP/BubbleTemplateEngine/zipball/3d2c47c27581264703e2ce4cf0349193039827ce",
-                "reference": "3d2c47c27581264703e2ce4cf0349193039827ce",
+                "url": "https://api.github.com/repos/DinoPHP/BubbleTemplateEngine/zipball/ac96eeb0ba4c9b74cb9494832147f18b8e9719e0",
+                "reference": "ac96eeb0ba4c9b74cb9494832147f18b8e9719e0",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 "php": ">=7.3",
                 "phpunit/phpunit": "9.5.7"
             },
-            "time": "2021-08-01T12:26:11+00:00",
+            "time": "2021-08-03T14:31:18+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -194,6 +194,8 @@
             "description": "Bubble, the flexible and secure template language for PHP",
             "homepage": "https://bubble.dinophp.com",
             "keywords": [
+                "dinophp",
+                "framework",
                 "templating"
             ],
             "support": {
@@ -4423,6 +4425,77 @@
                 }
             ],
             "install-path": "../symfony/string"
+        },
+        {
+            "name": "symfony/templating",
+            "version": "6.0.x-dev",
+            "version_normalized": "6.0.9999999.9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/templating.git",
+                "reference": "dcad69f70e8cdd588cd1f6dcbef9305aac8ee399"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/templating/zipball/dcad69f70e8cdd588cd1f6dcbef9305aac8ee399",
+                "reference": "dcad69f70e8cdd588cd1f6dcbef9305aac8ee399",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3"
+            },
+            "suggest": {
+                "psr/log-implementation": "For using debug logging in loaders"
+            },
+            "time": "2021-07-23T16:02:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Templating\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides all the tools needed to build any kind of template system",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/templating/tree/6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/templating"
         },
         {
             "name": "theseer/tokenizer",

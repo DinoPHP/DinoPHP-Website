@@ -4,6 +4,9 @@ namespace DinoPHP\View;
 
 use DinoPHP\File\File;
 use DinoPHP\Session\Session;
+use Symfony\Component\Templating\PhpEngine;
+use Symfony\Component\Templating\TemplateNameParser;
+use Symfony\Component\Templating\Loader\FilesystemLoader;
 
 class View {
 	/**
@@ -35,9 +38,10 @@ class View {
 	 * @return string
 	 */
 	public static function bubbleRender($path, $data = []) {
-		$loader = new \Bubble\Loader\FilesystemLoader('../views');
-		$hummer = new \Bubble\Environment($loader);
-		return $hummer->render($path, $data);
+
+		$loader = new FilesystemLoader('../views/%name%');
+		$templating = new PhpEngine(new TemplateNameParser(), $loader);
+		return $templating->render($path, $data);
 	}
 
 	/**

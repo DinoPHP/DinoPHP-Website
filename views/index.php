@@ -2,14 +2,14 @@
 
 <head>
 	<title>DinoPHP - The PHP Framework</title>
-	 {% include('links.php') %}
+	 <?php include('links.php') ?>
 	<style>
 
 	</style>
 </head>
 
 <body>
-{% include ('navbar.php') %}
+<?php include ('navbar.php') ?>
 
 	<div class="main-home">
 		<div class="container">
@@ -87,8 +87,8 @@
 			</div>
 		</div>
 	</div>
-{% include('footer.php') %}
+<?php include('footer.php') ?>
 </body>
-{% include('scripts.php') %}
+<?php include('scripts.php') ?>
 
 </html>

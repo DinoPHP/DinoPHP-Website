@@ -7,7 +7,7 @@ use DinoPHP\View\View;
 
 class Controller {
 	public function index() {
-		return view('index.php');
+		return view('index.bubble');
 	}
 	public function docs() {
 		return view('docs.php');
@@ -61,7 +61,11 @@ class Controller {
 		return view('pagination.php');
 	}
 	public function blog() {
-		$blog = Database::table("blog")->get();
-		return View::render('blog/index.php', ['blog' => $blog]);
+		$blog = Database::table("blog")->orderBy('id', 'desc')->get();
+		return View::render('blog/index.bubble', ['blog' => $blog]);
 	}
+	public function article() {
+		return View::render('blog/article.php');
+	}
+
 }

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>Our Team - DinoPHP Framework</title>
-{% include('links.php') %}
+<?php include('links.php') ?>
 </head>
 
 <body>
-{% include('navbar.php') %}
+<?php include('navbar.php') ?>
 
 <div class="container" style="margin-bottom: 5%;">
     <h1 style="font-weight: bold">The Dinophp Team</h1>
@@ -32,7 +32,7 @@
     </div>
 </div>
 
-{% include('footer.php') %}
+<?php include('footer.php') ?>
 </body>
-{% include('scripts.php') %}
+<?php include('scripts.php') ?>
 </html>

@@ -17,7 +17,8 @@
         "vlucas/phpdotenv": "^5.3",
         "dinophp/bubbletemplate" : "1.0.1",
         "phpunit/phpunit": "9.5.7",
-        "friendsofphp/php-cs-fixer": "3.0.0"
+        "friendsofphp/php-cs-fixer": "3.0.0",
+        "symfony/templating": "6.0.x-dev"
     },
     "autoload" : {
         "psr-4": {

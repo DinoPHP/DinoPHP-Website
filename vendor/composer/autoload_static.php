@@ -42,6 +42,7 @@ class ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Contracts\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Templating\\' => 29,
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Stopwatch\\' => 28,
             'Symfony\\Component\\Process\\' => 26,
@@ -144,6 +145,10 @@ class ComposerStaticInitcbd9535bd5437fb04dba9e67edf7a4e2
         'Symfony\\Contracts\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
+        ),
+        'Symfony\\Component\\Templating\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/templating',
         ),
         'Symfony\\Component\\String\\' => 
         array (

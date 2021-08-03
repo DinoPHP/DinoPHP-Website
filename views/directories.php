@@ -16,16 +16,16 @@
         }
 
 	</style>
-	{% include('links.php') %}
+	<?php include('links.php') ?>
 </head>
 
 <body>
-{% include('navbar.php') %}
+<?php include('navbar.php') ?>
 
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			{% include('docs-menu.php') %}
+			<?php include('docs-menu.php') ?>
 		</div>
 		<div class="col-lg">
 			<a href="#directory-structure"><h3 style="font-weight: bold"><span class="hashtag">#</span> Directory Structure</h3></a>
@@ -96,8 +96,8 @@
 	</div>
 </div>
 
-{% include('footer.php') %}
+<?php include('footer.php') ?>
 </body>
-{% include('scripts.php') %}
+<?php include('scripts.php') ?>
 
 </html>

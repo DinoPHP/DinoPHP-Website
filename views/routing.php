@@ -16,16 +16,16 @@
         }
 
 	</style>
-	{% include('links.php') %}
+	<?php include('links.php') ?>
 </head>
 
 <body>
-{% include('navbar.php') %}
+<?php include('navbar.php') ?>
 
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			{% include('docs-menu.php') %}
+			<?php include('docs-menu.php') ?>
 		</div>
 		<div class="col-lg">
 			<a href="#routing"><h3 style="font-weight: bold"><span class="hashtag">#</span> Routing</h3></a>
@@ -109,8 +109,8 @@ Route::any('/', function () {
 	</div>
 </div>
 
-{% include('footer.php') %}
+<?php include('footer.php') ?>
 </body>
-{% include('scripts.php') %}
+<?php include('scripts.php') ?>
 
 </html>
