@@ -244,3 +244,6 @@ span[style="color: #DD0000"] {
 div.code {
     white-space: pre;
 }
+p, h2 {
+    background-color: transparent !important;
+}

@@ -11,7 +11,7 @@ if(isset($_GET['id'])) {
 		while ($row = mysqli_fetch_assoc($query)) {
 			$title = $row['title'];
 			$date = $row['date'];
-			$content = $row['content'];
+			$content = base64_decode($row['content']);
 		}
 	} else {
 		echo "<script>history.back()</script>";
@@ -33,8 +33,6 @@ if(isset($_GET['id'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <meta name="description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
-    <meta property="og:description" content="DinoPHP is a web application framework for PHP with expressive, elegant syntax. We believe development must be an enjoyable experience to be truly">
     <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
     <meta property="og:url" content="https://dinophp.com/">
     <meta name="google-site-verification" content="_o-T2rIVsN3zX6wyzp5NfyPbAAxwkLQ6Rt89soYwF7A" />
@@ -298,7 +296,7 @@ if(isset($_GET['id'])) {
 
     <div class="container" style="max-width: 800px;">
         <div class="header">
-            <h3 style="font-weight: bold;"><?php echo "$title" ?></h3>
+            <h1 style="font-size: 1.75rem;font-weight: bold;"><?php echo "$title" ?></h1>
         </div>
         <div class="share">
                 <!-- Sharingbutton Facebook -->

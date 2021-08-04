@@ -96,7 +96,7 @@
         $id = $row['id'];
         $title = $row['title'];
         $date = $row['date'];
-        $content = $row['content'];
+        $content = base64_decode($row['content']);
 
         echo '
             <div class="col-lg" style="margin-bottom: 2%;">
@@ -104,9 +104,9 @@
                     <a href="article?id='.$id.'" class="article-title">
                         <h4 style="text-decoration: underline">'.$title.'</h4>
                     </a>
-                    <p style="margin-top: 1%;display: block;color: #484848;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">
+                    <div style="margin-top: 1%;color: #484848;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">
                         '.$content.'
-                    </p>
+                    </div>
                     <span style="font-size: 13px;color: #848484;">'.$date.'</span>
                 </div>
             </div>
