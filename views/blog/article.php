@@ -302,7 +302,7 @@ if(isset($_GET['id'])) {
 
     <div class="container" style="max-width: 800px;">
         <div class="header">
-            <h1 style="font-size: 1.75rem;font-weight: bold;"><?php echo "$title" ?></h1>
+            <h1 style="font-size: 1.75rem;font-weight: bold;text-transform: uppercase;"><?php echo "$title" ?></h1>
         </div>
         <div class="share">
                 <!-- Sharingbutton Facebook -->
