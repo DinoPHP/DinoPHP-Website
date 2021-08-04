@@ -35,6 +35,11 @@ if(isset($_GET['id'])) {
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
     <meta property="og:url" content="https://dinophp.com/">
+
+    <meta name="twitter:title" content="<?php echo "$title" ?> - DinoPHP Framework ">
+    <meta name="twitter:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
     <meta name="google-site-verification" content="_o-T2rIVsN3zX6wyzp5NfyPbAAxwkLQ6Rt89soYwF7A" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>

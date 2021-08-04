@@ -43,8 +43,8 @@
 			background-color: transparent;
 			border: none;
 		}
-        .article-content p {
-            font-size: 15px;
+        div.article-content p {
+            font-size: 15px !important;
         }
 	</style>
 </head>
