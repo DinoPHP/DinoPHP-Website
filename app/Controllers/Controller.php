@@ -67,5 +67,8 @@ class Controller {
 	public function article() {
 		return View::render('blog/article.php');
 	}
+	public function sitemap() {
+		return View::render('../public/sitemap.php');
+	}
 
 }
