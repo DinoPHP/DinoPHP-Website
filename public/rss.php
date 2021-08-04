@@ -14,7 +14,7 @@
     while ($row = mysqli_fetch_assoc($query)) {
 	    $id = $row['id'];
 	    $title = $row['title'];
-	    $content = base64_decode($row['content']);
+	    $content = strip_tags(base64_decode($row['content']));
 	    echo "
         	<item>
                 <title>$title</title>
