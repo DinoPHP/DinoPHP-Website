@@ -23,3 +23,4 @@ Route::get('/pagination', 'Controller@pagination');
 Route::get('/blog', 'Controller@blog');
 Route::get('/article', 'Controller@article');
 Route::get('/sitemap', 'Controller@sitemap');
+Route::get('/rss', 'Controller@rss');

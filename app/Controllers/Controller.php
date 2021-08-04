@@ -70,5 +70,8 @@ class Controller {
 	public function sitemap() {
 		return View::render('../public/sitemap.php');
 	}
+	public function rss() {
+		return View::render('../public/rss.php');
+	}
 
 }
