@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <url>
+<url>
         <loc>https://dinophp.com/</loc>
         <lastmod>2021-07-24T22:56:31+00:00</lastmod>
         <priority>1.00</priority>
