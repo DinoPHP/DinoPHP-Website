@@ -43,6 +43,9 @@
 			background-color: transparent;
 			border: none;
 		}
+        .article-content p {
+            font-size: 15px;
+        }
 	</style>
 </head>
 
@@ -104,7 +107,7 @@
                     <a href="article?id='.$id.'" class="article-title">
                         <h4 style="text-decoration: underline">'.$title.'</h4>
                     </a>
-                    <div style="margin-top: 1%;color: #484848;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">
+                    <div class="article-content" style="margin-top: 1%;color: #484848;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">
                         '.$content.'
                     </div>
                     <span style="font-size: 13px;color: #848484;">'.$date.'</span>

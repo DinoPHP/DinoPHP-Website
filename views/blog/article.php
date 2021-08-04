@@ -358,9 +358,9 @@ if(isset($_GET['id'])) {
         <?php
         echo '
             <span style="font-size: 13px;color: #848484;">Posted by DinoPHP team at ' . $date . '</span>
-            <p style="margin-top: 1%;display: block;color: #484848;">
+            <div style="margin-top: 1%;display: block;color: #484848;">
                 ' . $content . '
-            </p>
+            </div>
         ';
         ?>
 
