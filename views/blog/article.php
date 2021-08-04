@@ -3,13 +3,23 @@
 
 <?php
 $connect = mysqli_connect("us-cdbr-east-04.cleardb.com", "becd8d3bbbb6eb", "79adea6b", "heroku_47464723f5d8001");
-$id = $_GET['id'];
-$sql = "SELECT * FROM blog WHERE id = $id";
-$query = mysqli_query($connect, $sql);
-while ($row = mysqli_fetch_assoc($query)) {
-    $title = $row['title'];
-    $date = $row['date'];
-    $content = $row['content'];
+if(isset($_GET['id'])) {
+	$id = $_GET['id'];
+	$sql = "SELECT * FROM blog WHERE id = $id";
+	$query = mysqli_query($connect, $sql);
+	if(mysqli_num_rows($query) > 0) {
+		while ($row = mysqli_fetch_assoc($query)) {
+			$title = $row['title'];
+			$date = $row['date'];
+			$content = $row['content'];
+		}
+	} else {
+		echo "<script>history.back()</script>";
+		die();
+    }
+} else {
+	header('Location: /blog');
+	die();
 }
 ?>
 

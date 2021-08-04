@@ -2,6 +2,7 @@
 
 namespace DinoPHP\View;
 
+use Bubble\Environment;
 use DinoPHP\File\File;
 use DinoPHP\Session\Session;
 use Symfony\Component\Templating\PhpEngine;
