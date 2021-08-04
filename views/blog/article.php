@@ -33,6 +33,7 @@ if(isset($_GET['id'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="<?php echo "$title" ?> - DinoPHP Framework">
     <meta property="og:image" content="https://dinophp.com/pics/DinoPHP-Red-01.jpg">
     <meta property="og:url" content="https://dinophp.com/">
 
