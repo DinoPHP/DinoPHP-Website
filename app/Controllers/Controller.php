@@ -7,7 +7,7 @@ use DinoPHP\View\View;
 
 class Controller {
 	public function index() {
-		return view('index.php');
+		return view('index.bubble');
 	}
 	public function docs() {
 		return view('docs.php');
