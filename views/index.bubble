@@ -2,7 +2,7 @@
 
 <head>
 	<title>DinoPHP - The PHP Framework</title>
-	 <?php include('links.php') ?>
+	 <?php include('links.php');header('X-Framework: DinoPHP'); ?>
 	<style>
 
 	</style>
