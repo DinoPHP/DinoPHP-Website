@@ -24,6 +24,9 @@ class App {
 	 * @return void
 	 */
 	public static function run() {
+		// Send http header
+		header('X-Powered-By: DinoPHP');
+
 		// Register whoops
 		Whoops::handle();
 
